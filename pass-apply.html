@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>মুভমেন্ট পাস | বাংলাদেশ পুলিশ হেডকোয়ার্টার্স</title>
+    <meta content="লকডাউন পরিস্থিতিতে জরুরী প্রয়োজনে স্বাস্থ্যবিধি মেনে বের হওয়ার অনুমতি নিতে পুলিশ এর সংশ্লিষ্ট বিভাগে আবেদন করুন।" name="description">
+    <meta content="movement pass police bangladesh lockdown" name="keywords">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="T5y8IGdvpJ8qZ2oBipzoIVmXQIH9wnsYVrnkorlM">
+
+    <!-- Favicons -->
+    <link href="/assets/img/fav.png" rel="icon">
+    <link href="/assets/img/fav.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/datetimepicker/build/jquery.datetimepicker.min.css" rel="stylesheet">
+    <link href="/assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/jquery-editable-select.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
+    <style>
+        .select2-container--default .select2-selection--single {
+            height: 38px;
+        }
+
+        element.style {
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__placeholder {
+            color: #999;
+        }
+
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #444;
+            line-height: 38px;
+        }
+
+        element.style {
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 38px;
+        }
+    </style>
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    
+    <!-- movementpass.police.gov.bd Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y0DP6Y4WD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3Y0DP6Y4WD');
+    </script>
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <a href="https://movementpass.police.gov.bd" class="logo mr-auto">
+            <img src="/assets/img/police-logo.png" alt="" class="img-fluid">
+            মুভমেন্ট পাস        </a>
+        <!-- Uncomment below if you prefer to use text as a logo -->
+        <!-- <h1 class="logo mr-auto"><a href="index.html">Butterfly</a></h1> -->
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+
+                                    <li><a href="https://movementpass.police.gov.bd/movement/pass-apply"> পাসের আবেদন</a></li>
+                    <li><a href="https://movementpass.police.gov.bd/dashboard">পাস সংগ্রহ </a></li>
+                                
+                <li><a href="https://movementpass.police.gov.bd/faq">জিজ্ঞাসা</a></li>
+                <li><a href="https://livecoronatest.com/" target="_blank" href="#">করোনার ঝুঁকি পরীক্ষা </a></li>
+                                    <li><a href=https://movementpass.police.gov.bd/locale/en> English </a></li>
+                
+                                    <li>
+                        <a href="https://movementpass.police.gov.bd/logout"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            <i class="bi bi-box-arrow-right"></i> লগআউট                        </a>
+
+                        <form id="logout-form" action="https://movementpass.police.gov.bd/logout" method="POST" class="d-none">
+                            <input type="hidden" name="_token" value="T5y8IGdvpJ8qZ2oBipzoIVmXQIH9wnsYVrnkorlM">                        </form>
+
+                    </li>
+                            </ul>
+        </nav><!-- .nav-menu -->
+
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+
+<main id="main">
+    <section id="home" class="home" style="margin-top:50px">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                                    <div class="card">
+                        <div class="card-header">মুভমেন্ট পাসের জন্য প্রয়োজনীয় তথ্য দিন</div>
+                        <div class="card-body">
+                            <form class="form-row" id="pass_form" action="https://movementpass.police.gov.bd/movement/pass-apply" method="post"
+                                  enctype="multipart/form-data"><input type="hidden" name="_token" value="T5y8IGdvpJ8qZ2oBipzoIVmXQIH9wnsYVrnkorlM">                                <div class="form-group col-md-6">
+                                    <label for="from_destination">কোথা থেকে যাবেন <span class="text-danger">*</span></label>
+                                    <input type="text" value="" placeholder="জায়গার নাম লিখুন"
+                                           id="from_destination"
+                                           class="form-control "
+                                           name="from_destination" required>
+                                                                    </div>
+                                <div class="form-group col-md-6">
+                                    <label for="to_destination">কোথায় যাবেন <span class="text-danger">*</span></label>
+                                    <input type="text" value="" placeholder="জায়গার নাম লিখুন"
+                                           id="to_destination"
+                                           class="form-control "
+                                           name="to_destination" required>
+                                                                    </div>
+
+                
+                                <div class="form-group col-md-6">
+                                <label for="district">আপনার গন্তব্যের জেলা <span class="text-danger">*</span></label>
+                                        <select required class="district form-control " id="district"
+                                        name="district" placeholder="" required>
+                                            <option></option>
+                                                                                            <option value="Bagerhat" >Bagerhat</option>
+                                                                                            <option value="Bandarban" >Bandarban</option>
+                                                                                            <option value="Barguna" >Barguna</option>
+                                                                                            <option value="Barisal" >Barisal</option>
+                                                                                            <option value="Bhola" >Bhola</option>
+                                                                                            <option value="Barishal Metro" >Barishal Metro</option>
+                                                                                            <option value="Bogra" >Bogra</option>
+                                                                                            <option value="Brahmmanbaria" >Brahmmanbaria</option>
+                                                                                            <option value="Chandpur" >Chandpur</option>
+                                                                                            <option value="Chapai Nawabganj" >Chapai Nawabganj</option>
+                                                                                            <option value="Chittagong" >Chittagong</option>
+                                                                                            <option value="Chuadanga" >Chuadanga</option>
+                                                                                            <option value="Chottogram Metro" >Chottogram Metro</option>
+                                                                                            <option value="Cox&#039;s Bazar" >Cox&#039;s Bazar</option>
+                                                                                            <option value="Coxsbazar" >Coxsbazar</option>
+                                                                                            <option value="Cumilla" >Cumilla</option>
+                                                                                            <option value="Dhaka" >Dhaka</option>
+                                                                                            <option value="Dinajpur" >Dinajpur</option>
+                                                                                            <option value="Dhaka Metro" >Dhaka Metro</option>
+                                                                                            <option value="Faridpur" >Faridpur</option>
+                                                                                            <option value="Feni" >Feni</option>
+                                                                                            <option value="Gaibandha" >Gaibandha</option>
+                                                                                            <option value="Gazipur" >Gazipur</option>
+                                                                                            <option value="Gazipur Metro" >Gazipur Metro</option>
+                                                                                            <option value="Gopalgonj" >Gopalgonj</option>
+                                                                                            <option value="Habigonj" >Habigonj</option>
+                                                                                            <option value="Jaflong" >Jaflong</option>
+                                                                                            <option value="Jamalpur" >Jamalpur</option>
+                                                                                            <option value="Jessore" >Jessore</option>
+                                                                                            <option value="Jhalokathi" >Jhalokathi</option>
+                                                                                            <option value="Jhenaidah" >Jhenaidah</option>
+                                                                                            <option value="Joypurhat" >Joypurhat</option>
+                                                                                            <option value="Khagrachari" >Khagrachari</option>
+                                                                                            <option value="Khulna" >Khulna</option>
+                                                                                            <option value="Kishoregonj" >Kishoregonj</option>
+                                                                                            <option value="Khulna Metro" >Khulna Metro</option>
+                                                                                            <option value="Kurigram" >Kurigram</option>
+                                                                                            <option value="Kustia" >Kustia</option>
+                                                                                            <option value="Lalmonirhat" >Lalmonirhat</option>
+                                                                                            <option value="Laxmipur" >Laxmipur</option>
+                                                                                            <option value="Madaripur" >Madaripur</option>
+                                                                                            <option value="Magura" >Magura</option>
+                                                                                            <option value="Manikgonj" >Manikgonj</option>
+                                                                                            <option value="Meherpur" >Meherpur</option>
+                                                                                            <option value="Moulabhibazar" >Moulabhibazar</option>
+                                                                                            <option value="Munshigonj" >Munshigonj</option>
+                                                                                            <option value="Mymensingh" >Mymensingh</option>
+                                                                                            <option value="Naogaon" >Naogaon</option>
+                                                                                            <option value="Narail" >Narail</option>
+                                                                                            <option value="Narayangonj" >Narayangonj</option>
+                                                                                            <option value="Narsingdi" >Narsingdi</option>
+                                                                                            <option value="Natore" >Natore</option>
+                                                                                            <option value="Netrokona" >Netrokona</option>
+                                                                                            <option value="Nilphamari" >Nilphamari</option>
+                                                                                            <option value="Noakhali" >Noakhali</option>
+                                                                                            <option value="Pabna" >Pabna</option>
+                                                                                            <option value="Panchagarh" >Panchagarh</option>
+                                                                                            <option value="Patuakhali" >Patuakhali</option>
+                                                                                            <option value="Pirojpur" >Pirojpur</option>
+                                                                                            <option value="Rajbari" >Rajbari</option>
+                                                                                            <option value="Rajshahi" >Rajshahi</option>
+                                                                                            <option value="Rangamati" >Rangamati</option>
+                                                                                            <option value="Rangpur" >Rangpur</option>
+                                                                                            <option value="Rajshahi Metro " >Rajshahi Metro </option>
+                                                                                            <option value="Rangpur Metro " >Rangpur Metro </option>
+                                                                                            <option value="Saint Martin" >Saint Martin</option>
+                                                                                            <option value="Satkhira" >Satkhira</option>
+                                                                                            <option value="Shariatpur" >Shariatpur</option>
+                                                                                            <option value="Sherpur" >Sherpur</option>
+                                                                                            <option value="Sirajgonj" >Sirajgonj</option>
+                                                                                            <option value="Sylhet Metro" >Sylhet Metro</option>
+                                                                                            <option value="Srimangal" >Srimangal</option>
+                                                                                            <option value="Sunamgonj" >Sunamgonj</option>
+                                                                                            <option value="Sylhet" >Sylhet</option>
+                                                                                            <option value="Tangail" >Tangail</option>
+                                                                                            <option value="Teknaf" >Teknaf</option>
+                                                                                            <option value="Thakurgaon" >Thakurgaon</option>
+                                                                                    </select>
+                                        <small class="help-text text-muted">আপনি শহরে বসবাস করলে মেট্রো সিলেক্ট করুন। যেমন: Dhaka Metro</small>
+                                
+                                                                </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="thana">আপনার গন্তব্যের থানা<span
+                                        class="text-danger">*</span></label>
+                                        <select required class="thana form-control " id="thana" name="thana" required>
+                                                                                    </select>
+                                                            </div>
+                                
+                                <div class="form-group col-md-6">
+                                <label for="pass_time">অনুগ্রহপূর্বক পাশ ব্যবহারের তারিখ ও সময় নির্বাচন করুন<span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                                        </div>
+                                       <input type="text" required name="pass_time" id="pass_time" class="form-control" style="padding: .375rem .75rem;background:#fff" value="20-04-2021" autocomplete='off' readonly>
+                                        <div class="input-group-append">
+                                            <select required class="form-control editable" name="start_time" style="width: 100px;">
+                                                                                                <option >12:00</option>
+                                                <option >12:15</option>
+                                                <option >12:30</option>
+                                                <option >12:45</option>
+                                                                                                <option selected>11:00</option>
+                                                <option >11:15</option>
+                                                <option >11:30</option>
+                                                <option >11:45</option>
+                                                                                                <option >10:00</option>
+                                                <option >10:15</option>
+                                                <option >10:30</option>
+                                                <option >10:45</option>
+                                                                                                <option >9:00</option>
+                                                <option >9:15</option>
+                                                <option >9:30</option>
+                                                <option >9:45</option>
+                                                                                                <option >8:00</option>
+                                                <option >8:15</option>
+                                                <option >8:30</option>
+                                                <option >8:45</option>
+                                                                                                <option >7:00</option>
+                                                <option >7:15</option>
+                                                <option >7:30</option>
+                                                <option >7:45</option>
+                                                                                                <option >6:00</option>
+                                                <option >6:15</option>
+                                                <option >6:30</option>
+                                                <option >6:45</option>
+                                                                                                <option >5:00</option>
+                                                <option >5:15</option>
+                                                <option >5:30</option>
+                                                <option >5:45</option>
+                                                                                                <option >4:00</option>
+                                                <option >4:15</option>
+                                                <option >4:30</option>
+                                                <option >4:45</option>
+                                                                                                <option >3:00</option>
+                                                <option >3:15</option>
+                                                <option >3:30</option>
+                                                <option >3:45</option>
+                                                                                                <option >2:00</option>
+                                                <option >2:15</option>
+                                                <option >2:30</option>
+                                                <option >2:45</option>
+                                                                                                <option >1:00</option>
+                                                <option >1:15</option>
+                                                <option >1:30</option>
+                                                <option >1:45</option>
+                                                                                            </select>
+
+                                            <select required class="form-control" name="start_hour">
+                                                                                                <option value="AM" SELECTED>AM</option>
+                                                <option value="PM" >PM</option>
+                                            </select>
+                                        </div>
+                                    </div>                    
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="duration">বাইরে থাকার সময়সীমা নির্ধারণ করুন<span
+                                            class="text-danger">*</span></label>
+                                    <select required name="duration" id="duration"
+                                            class="form-control ">
+                                        <option value="" selected disabled>নির্বাচন করুন (Select)</option>
+                                                                                    <option value="1" >১
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="2" >২
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="3" >৩
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="4" >৪
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="5" >৫
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="6" >৬
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="7" >৭
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="8" >৮
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="9" >৯
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="10" >১০
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="11" >১১
+                                                ঘন্টা
+                                            </option>
+                                                                                    <option value="12" >১২
+                                                ঘন্টা
+                                            </option>
+                                                                            </select>
+                                                                    </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <div id="tripDiv">                                                  
+                                        <label for="trip_type">মুভমেন্টের ধরন<span
+                                                class="text-danger">*</span> &nbsp;&nbsp;</label>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" required type="radio" name="trip_type" id="trip_type2" value="2" checked>
+                                        <label class="form-check-label" for="trip_type2">যাওয়া ও আসা</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" required type="radio" name="trip_type" id="trip_type1" value="1" >
+                                        <label class="form-check-label" for="trip_type1">যাওয়া</label>
+                                        </div>
+                                    </div> 
+                                    <div id="need_vehicle" style="margin-top:10px;">
+                                        <label for="vehicle">আপনি কি গাড়ি নিয়ে বের হতে চান?<span
+                                                class="text-danger">*</span> &nbsp;&nbsp;</label>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" required type="radio" name="vehicle" id="vehicle_type1" value="1">
+                                        <label class="form-check-label" for="vehicle_type1">হ্যাঁ</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" required type="radio" name="vehicle" id="vehicle_type2" value="0" >
+                                        <label class="form-check-label" for="vehicle_type2">না</label>
+                                        </div>  
+                                    </div>                              
+                                    <div id="ask_driver" style="display:none;margin-top:10px;">
+                                        <label for="self_drive">আপনি কি নিজে ড্রাইভ করবেন?<span
+                                                class="text-danger">*</span> &nbsp;&nbsp;</label>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" required type="radio" name="self_drive" id="self_drive_type1" value="1">
+                                        <label class="form-check-label" for="self_drive_type1">হ্যাঁ</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" required type="radio" name="self_drive" id="self_drive_type2" value="0" >
+                                        <label class="form-check-label" for="self_drive_type2">না</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                                                           
+
+                                <div class="form-group col-md-6">
+                                    <label for="pass_reason">কী জন্য পাস প্রয়োজন<span
+                                            class="text-danger">*</span></label>
+                                    <select required class="form-control " id="pass_reason"
+                                            name="pass_reason">
+                                        <option value="">নির্বাচন করুন (Select a reason)</option>
+                                        <option
+                                            value="করোনা টিকা নেয়া (Take Covid Vaccine)" >
+                                            করোনা টিকা নেয়া (Take Covid Vaccine)
+                                        </option>
+                                        <option
+                                            value="করোনা টেস্ট (Covid Test)" >
+                                            করোনা টেস্ট (Covid Test)
+                                        </option>
+                                        <option
+                                            value="মুদি মালামাল কেনা কাটা (Grocery shopping)" >
+                                            মুদি মালামাল কেনা কাটা (Grocery shopping)
+                                        </option>
+                                        <option
+                                            value="কাঁচা বাজার (Kitchen Market)" >
+                                            কাঁচা বাজার (Kitchen Market)
+                                        </option>
+                                        <option
+                                            value="ঔষধ ক্রয় (Medicine purchase)" >
+                                            ঔষধ ক্রয় (Medicine purchase)
+                                        </option>
+                                        <option
+                                            value="চিকিৎসা (Treatment)" >
+                                            চিকিৎসা (Treatment)
+                                        </option>
+                                        <option value="চাকুরী (Job)" >
+                                            চাকুরী
+                                            (Job)
+                                        </option>
+                                        <option
+                                            value="কৃষিকাজ (Agriculture)" >
+                                            কৃষিকাজ (Agriculture)
+                                        </option>
+                                        <option
+                                            value="পণ্য পরিবহণ (Goods Transport)" >
+                                            পণ্য পরিবহণ (Goods Transport)
+                                        </option>
+                                        <option
+                                            value="পন্য সরবরাহ (Supply chain)" >
+                                            পন্য সরবরাহ (Supply chain)
+                                        </option>
+                                        <option
+                                            value="পাইকারী/খুচরা বিক্রয় (Wholesale / Retail sale)" >
+                                            পাইকারী/খুচরা বিক্রয় (Wholesale / Retail sale)
+                                        </option>
+                                        <option
+                                            value="মৃতদেহ সৎকার (Funeral)" >
+                                            মৃতদেহ সৎকার (Funeral)
+                                        </option>
+                                        <option
+                                            value="ব্যবসা (Business)" >
+                                            ব্যবসা (Business)
+                                        </option>
+                                        <option
+                                            value="Other" >
+                                            অন্যান্য (Others)
+                                        </option>
+                                    </select>
+                                                                    </div>
+
+                               
+
+                                                 
+                            
+
+                                <div id="othersDiv" class="form-group col-md-6" style="display:none">
+                                    <label for="others_reason">অন্যান্য কারণ লিখুন<span
+                                            class="text-danger">*</span></label>
+                                    <input required type="text" value="" placeholder="কি কারণে বাইরে যেতে চান লিখুন"
+                                           id="others_reason"
+                                           class="form-control "
+                                           name="others_reason">
+                                                                    </div>
+
+                                <div id="numberDiv" class="form-group col-md-6" style="display:none">
+                                    <label for="vehicle_number">গাড়ীর নম্বর লিখুন<span
+                                            class="text-danger">*</span></label>
+                                    <input required type="text" value="" placeholder="XXXXXX"
+                                           id="vehicle_number"
+                                           class="form-control "
+                                           name="vehicle_number">
+                                                                    </div>
+
+                            
+                                <div class="form-group col-md-6" id="driverDiv1" style="display:none">
+                                    <label for="driver_name">ড্রাইভারের নাম<span
+                                            class="text-danger">*</span></label>
+                                    <input required type="text" value="" placeholder="আপনার ড্রাইভারের নাম লিখুন"
+                                        id="driver_name"
+                                        class="form-control "
+                                        name="driver_name">
+                                                                    </div>
+                                <div class="form-group col-md-6" id="driverDiv2" style="display:none">
+                                    <label for="driver_license">ড্রাইভিং লাইসেন্স নাম্বার<span
+                                            class="text-danger">*</span></label>
+                                    <input required type="text" value="" placeholder="আপনার লাইসেন্স নাম্বার লিখুন"
+                                        id="driver_license"
+                                        class="form-control "
+                                        name="driver_license">
+                                                                    </div>
+                            
+                                <div class="col-12">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary"><i class="bi bi-check2"></i> জমা দিন</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+    </section>
+</main><!-- End #main -->
+
+
+<style>
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Set the fixed height of the footer here */
+  line-height: 40px; /* Vertically center the text there */
+  background-color: #EDF8FE;
+  z-index: 200;
+}
+</style>
+<footer class="text-muted footer">
+      <div class="container">
+        <p class="text-center">&copy; ICT Police Headquarters | Version 2.14.01</p>
+      </div>
+</footer>
+
+<!-- Vendor JS Files -->
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<script src="/assets/js/jquery-editable-select.min.js"></script>
+<script src="/assets/js/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        // $('.thana').select2({
+        //     placeholder: "আপনার গন্তব্যের থানার নাম লিখুন",
+        //     allowClear: true,
+        //     minimumInputLength: 3,
+        //     ajax: {
+        //         url: '/select/thana',
+        //         dataType: 'json',
+        //         delay: 250,
+        //         processResults: function (data) {
+        //             return {
+        //                 results: $.map(data, function (item) {
+        //                     return {
+        //                         text: item.name + ", " + item.parent,
+        //                         id: item.id
+        //                     }
+        //                 })
+        //             };
+        //         },
+        //         cache: true
+        //     }
+        // });
+
+        // 
+        // $('.thana').on('change', function() {
+        //     var thana = $(".thana option:selected").text();
+        //     $('.thana_name').val(thana);
+        // });
+
+        //THANA
+        $('.thana').select2({
+            placeholder: "আপনার থানার নাম লিখুন",
+            allowClear: true
+        });
+
+        //DISCTRICT
+        $('.district').select2({
+            placeholder: "আপনার জেলার নাম লিখুন",
+            allowClear: true
+        });
+
+        $('.district').on('change', function() {
+            var district = $(this).val();
+            var selectedData = 'q='+ district;
+            $.ajax({
+                type: 'GET',
+                url: '/select/thana',
+                dataType: 'json',
+                data: selectedData,
+                }).done( function( data ) {
+                       data = $.map(data, function(item) {
+                            return { id: item.text, text: item.text };
+                        });
+                        $('.thana').empty().trigger("change");
+                        $('.thana').select2({
+                            data: data,
+                            allowClear: true,
+                            placeholder: "আপনার থানার নাম লিখুন",
+                        });
+                });
+        });
+
+
+        $('#pass_time').datepicker({
+            dateFormat: "dd-mm-yy",
+            minDate: "20-04-2021",
+            maxDate: '21-04-2021',
+        });
+
+        $("#dob").datepicker({
+            changeYear: !0, changeMonth: !0,
+            yearRange: '1940:2020',
+            dateFormat: "dd-mm-yy"
+        })
+
+        $('.editable').editableSelect();
+
+        $(document).ready(function () {
+            // $("#vehicle").change(function () {
+            //     $(this).find("option:selected").each(function () {
+            //         var x = document.getElementById("numberDiv");
+            //         var optionValue = $(this).attr("value");
+            //         if (optionValue) {
+            //             if (optionValue == 1) {
+            //                 x.style.display = "block";
+            //             } else {
+            //                 x.style.display = "none";
+            //             }
+            //         } else {
+            //             x.style.display = "none";
+            //         }
+            //     });
+            // }).change();
+
+            $("#vehicle_type1, #vehicle_type2").click(function(){
+                    var optionValue = $("input[name='vehicle']:checked").val();
+                    var x = document.getElementById("ask_driver");
+                    var y = document.getElementById("numberDiv");
+                    if (optionValue) {
+                        if (optionValue == 1) {
+                            x.style.display = "block";
+                            y.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                            y.style.display = "none";
+                        }
+                    } else {
+                        x.style.display = "none";
+                        y.style.display = "none";
+                    }
+            });
+
+            $("#self_drive_type1, #self_drive_type2").click(function(){
+                    var optionValue = $("input[name='self_drive']:checked").val();
+                    var x = document.getElementById("driverDiv1");
+                    var y = document.getElementById("driverDiv2");
+                    if (optionValue) {
+                        if (optionValue == '0') {
+                            x.style.display = "block";
+                            y.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                            y.style.display = "none";
+                        }
+                    } else {
+                        x.style.display = "none";
+                        y.style.display = "none";
+                    }
+            });
+
+
+            $("#pass_reason").change(function () {
+                $(this).find("option:selected").each(function () {
+                    var y = document.getElementById("othersDiv");
+                    var optionValue = $(this).attr("value");
+                    if (optionValue) {
+                        if (optionValue == "Other") {
+                            y.style.display = "block";
+                        } else {
+                            y.style.display = "none";
+                        }
+                    } else {
+                        y.style.display = "none";
+                    }
+                });
+            }).change();
+
+        });
+
+        $("#pass_form").validate({
+            rules: {
+                mobile: {
+                    required: true,
+                    number: true
+                },
+                id_number: {
+                    required: true,
+                    number: true
+                },
+            },
+            highlight: function(element) {
+                jQuery(element).closest('.form-control').addClass('is-invalid');
+            },
+            unhighlight: function(element) {
+                jQuery(element).closest('.form-control').removeClass('is-invalid');
+            },
+            errorElement: 'div',
+            errorClass: 'invalid-feedback',
+            errorPlacement: function (error, e) {
+                    e.parents('.form-group').append(error);
+            },
+            submitHandler: function(form) {
+                if (grecaptcha.getResponse()) {
+                    form.submit();
+                } else {
+                    $(".captcha_error").show();
+                }
+            }
+        });
+
+    </script>
+<!-- Template Main JS File -->
+<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
